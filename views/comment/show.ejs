@@ -1,0 +1,20 @@
+<%- include ('../header') -%>
+
+<div class="ui comments">
+
+        <div class="comment">
+            <a class='avatar' href="/comment/<%= message.id%>">
+                <img src="https://randomuser.me/api/portraits/lego/4.jpg" alt="icon">
+            </a>
+            <div class="content">
+                <div class="metadata">
+                    <div class="date">
+                        <%= message.date.fromNow()%>
+                    </div>
+                </div>
+                <div class="test"><%= message.content%></div>
+            </div>
+        </div>
+</div>
+
+<%- include ('../footer') -%>
